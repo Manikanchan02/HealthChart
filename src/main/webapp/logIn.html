@@ -1,0 +1,39 @@
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Chart</title>
+<link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+	<form action="/Health/login" method="post">
+
+		<div class="imgcontainer">
+			<img src="img/login.jpg" alt="Avatar" class="avatar">
+			<h2>Sign in</h2>
+		</div>
+
+		<div class="container">
+		
+			<label for="userName"><b>User-Name</b></label> 
+			<input type="text" placeholder="Enter Username" name="userName" required>
+				
+			<label for="userPass"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="userPass" required>
+			
+			
+			<button type="submit">Login</button>
+
+			<label> <input type="checkbox" checked="checked"
+				name="remember"> Remember me
+			</label>
+		</div>
+
+		<div class="signup">
+			<a href="signUp.html">Don't have an account? Sign Up</a>
+		</div>
+
+	</form>
+</body>
+</html>

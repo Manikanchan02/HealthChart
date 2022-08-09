@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Chart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="link">
+		<br />
+		<a href="/Health/display">Show All Details</a> <a
+			href="/Health/logOut">Log Out</a>
+	</div>
+	<br />
+	<form action="/Health/result" method="post">
+		<h1>Family Health Chart</h1>
+		<fieldset>
+			<legend>Personal Informations</legend>
+			<div class="header">
+				<p>
+					<label for="name"><b>Name</b></label><input type="text"
+						placeholder="Enter Your Name" name="name" required>
+				</p>
+				<p>
+					<label for="gender"><b>Gender: </b></label>Male <input type="radio"
+						name="gender" id="male" value="Male" required> Female <input
+						type="radio" name="gender" id="female" value="Female" required>
+				</p>
+				<p>
+					<label for="age"><b>Age</b></label><input type="number"
+						placeholder="Enter Your Age" name="age" id="age" required>
+				</p>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Health Informations</legend>
+			<div class="container">
+				<label for="bp"><b>Blood Pressure</b></label><input type="text"
+					placeholder="Enter Blood Pressure" name="bp" id="bp" required>
+				<label for="weight"><b>Weight</b></label><input type="text"
+					placeholder="Enter Weight" name="weight" id="weight" required>
+				<label for="pr"><b>Pulse Rate</b></label><input type="number"
+					placeholder="Enter Pulse Rate" name="pr" id="pr" required>
+			</div>
+		</fieldset>
+
+		<p>
+			<button type="submit">Save Now</button>
+		</p>
+	</form>
+
+</body>
+</html>
